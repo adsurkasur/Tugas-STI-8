@@ -7,9 +7,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Client Portal Login - ProConsulting Group</title>
+    <title>REPLACETHISTEXT</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <title>REPLACETHISTEXT</title>
   </head>
   <body>
 
@@ -18,7 +19,7 @@
         <div class="row justify-content-md-center"> 
         </div>
 
-        <h1 class="h3 mb-3 fw-normal">Client Portal Login</h1>
+        <h1 class="h3 mb-3 fw-normal">login</h1>
         <form method="post" action="cek_login.php">
           <div class="form-floating">
             <input type="username" name="username" class="form-control" id="floatingInput" placeholder="username">
@@ -34,10 +35,10 @@
               <input type="checkbox" value="remember-me"> Remember me
             </label>
           </div>
-          <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
-          <p class="mt-5 mb-3 text-muted">&copy; 2025 ProConsulting Group</p>
+          <button class="w-100 btn btn-lg btn-primary" type="submit">login</button>
+          <p class="mt-5 mb-3 text-muted">&copy; ade</p>
         </form>
-      <a href="index.php">Back to Home</a>
+      <a href="index.php">home</a>
     </main>
 
 </body>

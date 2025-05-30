@@ -22,13 +22,10 @@
           <a class="nav-link active" aria-current="page" href="index.php">home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#services">Our Services</a>
+          <a class="nav-link" href="view_data.php">data mahasiswa</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="login.php">login</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -42,8 +39,8 @@
 <div class="container-md">
     <div class="jumbotron jumbotron-fluid" >
         <div class="container " >
-          <h1 class="display-4">Empower Your Business Growth</h1>
-          <p class="lead">Professional Consulting Services to Accelerate Your Success</p>
+          <h1 class="display-4">REPLACETHISTEXT</h1>
+          <p class="lead">REPLACETHISTEXT</p>
         </div>
       </div>
       <!-- Slider-->
@@ -82,38 +79,38 @@
 <!--Container 2-->
 <div class="border-bottom pb-3 mb-5 container text-center shadow">
     <!--Card-->
-    <h1><b>Our Consulting Solutions</b></h1>
+    <h1><b>REPLACETHISTEXT</b></h1>
     <div class="card-group">
   <div class="card">
-    <img src="img/01.jpg" class="card-img-top" alt="Business Strategy">
+    <img src="img/01.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Business Strategy</h5>
-      <p class="card-text">Tailored strategies to help your business thrive in a competitive market.</p>
-      <p class="card-text"><small class="text-muted">Updated 2025</small></p>
+      <h5 class="card-title">REPLACETHISTEXT</h5>
+      <p class="card-text">REPLACETHISTEXT</p>
+      <p class="card-text"><small class="text-muted">REPLACETHISTEXT</small></p>
     </div>
   </div>
   <div class="card">
-    <img src="img/02.jpg" class="card-img-top" alt="Digital Transformation">
+    <img src="img/02.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Digital Transformation</h5>
-      <p class="card-text">Modernize your operations and embrace digital innovation for growth.</p>
-      <p class="card-text"><small class="text-muted">Trusted by 100+ clients</small></p>
+      <h5 class="card-title">REPLACETHISTEXT</h5>
+      <p class="card-text">REPLACETHISTEXT</p>
+      <p class="card-text"><small class="text-muted">REPLACETHISTEXT</small></p>
     </div>
   </div>
   <div class="card">
-    <img src="img/03.jpg" class="card-img-top" alt="Operations Consulting">
+    <img src="img/03.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Operations Consulting</h5>
-      <p class="card-text">Optimize processes and improve efficiency across your organization.</p>
-      <p class="card-text"><small class="text-muted">Award-winning team</small></p>
+      <h5 class="card-title">REPLACETHISTEXT</h5>
+      <p class="card-text">REPLACETHISTEXT</p>
+      <p class="card-text"><small class="text-muted">REPLACETHISTEXT</small></p>
     </div>
   </div>
   <div class="card">
-    <img src="img/04.jpg" class="card-img-top" alt="Financial Advisory">
+    <img src="img/04.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Financial Advisory</h5>
-      <p class="card-text">Expert financial planning and risk management for sustainable growth.</p>
-      <p class="card-text"><small class="text-muted">Contact us for a free consultation</small></p>
+      <h5 class="card-title">REPLACETHISTEXT</h5>
+      <p class="card-text">REPLACETHISTEXT</p>
+      <p class="card-text"><small class="text-muted">REPLACETHISTEXT</small></p>
     </div>
   </div>
 </div>
@@ -121,14 +118,20 @@
 
 <!--Footer-->
 <footer class="py-3 my-4">
-  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-    <li class="nav-item"><a href="#services" class="nav-link px-2 text-muted">Services</a></li>
-    <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">About</a></li>
-    <li class="nav-item"><a href="#contact" class="nav-link px-2 text-muted">Contact</a></li>
-  </ul>
-  <p class="text-center text-muted">&copy; 2025 ProConsulting Group</p>
-</footer>
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="https://tip.ub.ac.id/laboratorium/lab-komputasi-dan-sistem-agroindustri/">REPLACETHISTEXT</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://api.whatsapp.com/send/?phone=%2B6282146145084&text&type=phone_number&app_absent=0">REPLACETHISTEXT</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="hhttps://www.instagram.com/reel/C4xtI1uSRV-/?igsh=ZDk3NGtoeXl4c2ds">REPLACETHISTEXT</a>
+  </li>
+</ul>
+
+
 <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>

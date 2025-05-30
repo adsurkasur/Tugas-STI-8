@@ -3,7 +3,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $database = "consulting_db";
+    $database = "latian";
 
     // Membuat koneksi ke database
     $conn = mysqli_connect($servername, $username, $password, $database);

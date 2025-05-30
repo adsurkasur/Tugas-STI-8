@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Our Clients - ProConsulting Group</title>
+    <title>REPLACETHISTEXT</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
@@ -18,27 +18,27 @@
         <div class="col-md-12">
           <div class="card">
             <div class="card-header">
-              <h4>Client Portfolio
-                <a href="index.php" class="btn btn-danger float-end">Back to Home</a>
+              <h4>REPLACETHISTEXT
+                <a href="index.php" class="btn btn-danger float-end">REPLACETHISTEXT</a>
               </h4>
             </div>
             <div class="card-body">
               <table class="table table-striped">
                 <thead>
                   <tr>
-                  <th>ID</th>
-                  <th>Company Name</th>
-                  <th>Industry</th>
-                  <th>Project</th>
-                  <th>Location</th>
-                  <th>Email</th>
-                  <th>Contact</th>
+                  <th>id</th>
+                  <th>nama</th>
+                  <th>nim</th>
+                  <th>tanggal_lahir</th>
+                  <th>alamat</th>
+                  <th>email</th>
+                  <th>no_telepon</th>
                   </tr>
                 </thead>
                 <tbody>
                   <?php
                     // Query untuk menampilkan data 
-                    $sql = "SELECT * FROM clients";
+                    $sql = "SELECT * FROM mahasiswa";
                     $result = $conn->query($sql);
 
                     // Menampilkan data ke dalam tabel
@@ -46,16 +46,16 @@
                       while($row = $result->fetch_assoc()) {
                           echo "<tr>";
                           echo "<td>" . $row["id"] . "</td>";
-                          echo "<td>" . $row["company_name"] . "</td>";
-                          echo "<td>" . $row["industry"] . "</td>";
-                          echo "<td>" . $row["project"] . "</td>";
-                          echo "<td>" . $row["location"] . "</td>";
+                          echo "<td>" . $row["nama"] . "</td>";
+                          echo "<td>" . $row["nim"] . "</td>";
+                          echo "<td>" . $row["tanggal_lahir"] . "</td>";
+                          echo "<td>" . $row["alamat"] . "</td>";
                           echo "<td>" . $row["email"] . "</td>";
-                          echo "<td>" . $row["contact"] . "</td>";
+                          echo "<td>" . $row["no_telepon"] . "</td>";
                           echo "</tr>";
                       }
                     } else {
-                        echo "<tr><td colspan='8'>No client data found.</td></tr>";
+                        echo "<tr><td colspan='8'>Data tidak ditemukan.</td></tr>";
                     }
                     // Tutup koneksi ke database
                     $conn->close();

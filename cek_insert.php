@@ -2,14 +2,14 @@
     session_start();
     require 'cek_database.php';
     
-    $company_name = $_POST['company_name'];
-    $industry = $_POST['industry'];
-    $project = $_POST['project'];
-    $location = $_POST['location'];
+    $nama = $_POST['nama'];
+    $nim = $_POST['nim'];
+    $tanggal_lahir = $_POST['tanggal_lahir'];
+    $alamat = $_POST['alamat'];
     $email = $_POST['email']; 
-    $contact = $_POST['contact'];
+    $no_telepon = $_POST['no_telepon'];
 
-    $query = "INSERT INTO clients (company_name,industry,project,location,email,contact) VALUES ('$company_name','$industry', '$project', '$location','$email', '$contact')";
+    $query = "INSERT INTO mahasiswa (nama,nim,tanggal_lahir,alamat,email,no_telepon) VALUES ('$nama','$nim', '$tanggal_lahir', '$alamat','$email', '$no_telepon')";
     $query_run = mysqli_query($conn, $query);
     
     if($query_run)
