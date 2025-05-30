@@ -26,7 +26,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">lab ksa</a>
+      <a class="navbar-brand" href="#">ProConsulting Group</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,7 +36,7 @@
             <a class="nav-link active" aria-current="page" href="index.php">home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="view_admin.php">data mahasiswa</a>
+            <a class="nav-link disabled" href="view_admin.php">Client Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="logout.php">logout</a>
@@ -56,27 +56,27 @@
       <div class="col-md-12">
         <div class="card">
           <div class="card-header">
-            <h4>Data  
-              <a href="insert_data.php" class="btn btn-success float-end">insert</a>
+            <h4>Client Portfolio
+              <a href="insert_data.php" class="btn btn-success float-end">Add Client</a>
             </h4>
           </div>
           <div class="card-body">
             <table class="table table-striped">
               <thead class="text-left">
                   <tr>
-                  <th>id</th>
-                  <th>nama</th>
-                  <th>nim</th>
-                  <th>tanggal_lahir</th>
-                  <th>alamat</th>
-                  <th>email</th>
-                  <th>no_telepon</th>
+                  <th>ID</th>
+                  <th>Company Name</th>
+                  <th>Industry</th>
+                  <th>Project</th>
+                  <th>Location</th>
+                  <th>Email</th>
+                  <th>Contact</th>
                   </tr>
               </thead>
               <tbody>
                 <?php
                   // Query untuk memanggil data
-                  $sql = "SELECT * FROM mahasiswa";
+                  $sql = "SELECT * FROM clients";
                   $result = $conn->query($sql);
 
                   // Tampilkan data ke dalam tabel
@@ -84,19 +84,18 @@
                     while($row = $result->fetch_assoc()) {
                       echo "<tr>";
                       echo "<td>" . $row["id"] . "</td>";
-                      echo "<td>" . $row["nama"] . "</td>";
-                      echo "<td>" . $row["nim"] . "</td>";
-                      echo "<td>" . $row["tanggal_lahir"] . "</td>";
-                      echo "<td>" . $row["alamat"] . "</td>";
+                      echo "<td>" . $row["company_name"] . "</td>";
+                      echo "<td>" . $row["industry"] . "</td>";
+                      echo "<td>" . $row["project"] . "</td>";
+                      echo "<td>" . $row["location"] . "</td>";
                       echo "<td>" . $row["email"] . "</td>";
-                      echo "<td>" . $row["no_telepon"] . "</td>";
-                      
-                      echo "<td> <a href=update_data.php?id=".$row["id"]." class='btn btn-warning btn-sm'>update</a>
-                      <a href=delete_data.php?id=".$row["id"]." class='btn btn-danger btn-sm'>delete</a>";
-                      echo "</tr>";         
+                      echo "<td>" . $row["contact"] . "</td>";
+                      echo "<td> <a href=update_data.php?id=".$row["id"]." class='btn btn-warning btn-sm'>Update</a>
+                      <a href=delete_data.php?id=".$row["id"]." class='btn btn-danger btn-sm'>Delete</a>";
+                      echo "</tr>";
                     }
                   } else {
-                      echo "<tr><td colspan='8'>Data tidak ditemukan.</td></tr>";
+                      echo "<tr><td colspan='8'>No client data found.</td></tr>";
                   }
                   // Tutup koneksi ke database
                   $conn->close();
@@ -115,12 +114,11 @@
     <footer class="py-3 my-4">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Praktikum</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Team</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link px-2 text-muted">Services</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">About</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link px-2 text-muted">Contact</a></li>
       </ul>
-      <p class="text-center text-muted">&copy; ade</p>
+      <p class="text-center text-muted">&copy; 2025 ProConsulting Group</p>
     </footer>
   </div>
 

@@ -3,7 +3,7 @@
     require 'cek_database.php';
     $id = $_GET['id'];
 
-    $query = "DELETE FROM mahasiswa WHERE id='$id'";
+    $query = "DELETE FROM clients WHERE id='$id'";
     //echo ($query);
 
     $query_run = mysqli_query($conn, $query);
