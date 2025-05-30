@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ade</title>
+    <title>LibraryApp by Ade</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
@@ -125,7 +125,7 @@
     <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
     <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
   </ul>
-  <p class="text-center text-muted">&copy; LibraryApp</p>
+  <p class="text-center text-muted">&copy; LibraryApp - Ade Surya Ananda - 235100300111009</p>
 </footer>
 
 <?php if(isset($_GET['pesan']) && $_GET['pesan'] == 'login_failed'): ?>
