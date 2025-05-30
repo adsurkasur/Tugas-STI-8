@@ -20,6 +20,6 @@
     $_SESSION['status'] = "login";
     header("location:view_admin.php");
   }else{
-    header("location:index.php?pesan=gagal");
+    header("location:index.php?pesan=login_failed");
     }
 ?>

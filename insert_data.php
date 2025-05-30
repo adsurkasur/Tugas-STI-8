@@ -25,7 +25,7 @@ if (!isset($_SESSION['username'])) {
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">lab ksa</a>
+            <a class="navbar-brand" href="#">Library Central</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,13 +33,13 @@ if (!isset($_SESSION['username'])) {
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ne-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php">home</a>
+                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="view_admin.php">data mahasiswa</a>
+                        <a class="nav-link disabled" href="view_admin.php">Book Data</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="logout.php">log out</a>
+                        <a class="nav-link active" href="logout.php">Logout</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -56,38 +56,38 @@ if (!isset($_SESSION['username'])) {
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4>insert data
-                        <a href="view_admin.php" class="btn btn-danger float-end">cancel</a>
+                    <h4>Add New Book
+                        <a href="view_admin.php" class="btn btn-danger float-end">Cancel</a>
                     </h4>
                 </div>
             <div class="card-body">
                 <form action="cek_insert.php" method="POST">
                     <div class="mb-3">
-                        <label>nama</label>
+                        <label>Title</label>
                         <input type="text" name="nama" class="form-control">
                     </div>
                     <div class="mb-3">
-                        <label>nim</label>
+                        <label>Author</label>
                         <input type="text" name="nim" class="form-control">
                     </div>
                     <div class="mb-3">
-                        <label>tanggal_lahir</label>
+                        <label>ISBN</label>
                         <input type="text" name="tanggal_lahir" class="form-control">
                     </div>
                     <div class="mb-3">
-                        <label>alamat</label>
+                        <label>Published Date</label>
                         <input type="text" name="alamat" class="form-control">
                     </div>
                     <div class="mb-3">
-                        <label>email</label>
+                        <label>Genre</label>
                         <input type="text" name="email" class="form-control">
                     </div>
                     <div class="mb-3">
-                        <label>no_telepon</label>
+                        <label>Availability</label>
                         <input type="text" name="no_telepon" class="form-control">
                     </div>
                     <div class="mb-3">
-                        <button type="submit" name="simpan_data" class="btn btn-primary">Simpan</button>
+                        <button type="submit" name="simpan_data" class="btn btn-primary">Save</button>
                     </div>
                 </form>
             </div>
@@ -100,12 +100,12 @@ if (!isset($_SESSION['username'])) {
     <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Praktikum</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Library Info</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Team</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
         </ul>
-        <p class="text-center text-muted">&copy; ade</p>
+        <p class="text-center text-muted">&copy; LibraryApp</p>
     </footer>
 </div>
 

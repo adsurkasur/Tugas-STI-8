@@ -12,20 +12,20 @@
     </nav>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">lab ksa</a>
+    <a class="navbar-brand" href="#">Library Central</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php">home</a>
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="view_data.php">data mahasiswa</a>
+          <a class="nav-link" href="view_data.php">Book List</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login.php">login</a>
+          <a class="nav-link" href="login.php">Admin Login</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -39,8 +39,8 @@
 <div class="container-md">
     <div class="jumbotron jumbotron-fluid" >
         <div class="container " >
-          <h1 class="display-4">REPLACETHISTEXT</h1>
-          <p class="lead">REPLACETHISTEXT</p>
+          <h1 class="display-4">Welcome to Library Central</h1>
+          <p class="lead">Manage your library's book collection with ease.</p>
         </div>
       </div>
       <!-- Slider-->
@@ -79,38 +79,38 @@
 <!--Container 2-->
 <div class="border-bottom pb-3 mb-5 container text-center shadow">
     <!--Card-->
-    <h1><b>REPLACETHISTEXT</b></h1>
+    <h1><b>Featured Books</b></h1>
     <div class="card-group">
   <div class="card">
-    <img src="img/01.jpg" class="card-img-top" alt="...">
+    <img src="img/01.jpg" class="card-img-top" alt="The Great Gatsby">
     <div class="card-body">
-      <h5 class="card-title">REPLACETHISTEXT</h5>
-      <p class="card-text">REPLACETHISTEXT</p>
-      <p class="card-text"><small class="text-muted">REPLACETHISTEXT</small></p>
+      <h5 class="card-title">The Great Gatsby</h5>
+      <p class="card-text">A classic novel by F. Scott Fitzgerald about the mysterious millionaire Jay Gatsby and his obsession with Daisy Buchanan in 1920s America.</p>
+      <p class="card-text"><small class="text-muted">Available</small></p>
     </div>
   </div>
   <div class="card">
-    <img src="img/02.jpg" class="card-img-top" alt="...">
+    <img src="img/02.jpg" class="card-img-top" alt="To Kill a Mockingbird">
     <div class="card-body">
-      <h5 class="card-title">REPLACETHISTEXT</h5>
-      <p class="card-text">REPLACETHISTEXT</p>
-      <p class="card-text"><small class="text-muted">REPLACETHISTEXT</small></p>
+      <h5 class="card-title">To Kill a Mockingbird</h5>
+      <p class="card-text">Harper Lee’s timeless story of racial injustice and childhood innocence in the Deep South, seen through the eyes of young Scout Finch.</p>
+      <p class="card-text"><small class="text-muted">Available</small></p>
     </div>
   </div>
   <div class="card">
-    <img src="img/03.jpg" class="card-img-top" alt="...">
+    <img src="img/03.jpg" class="card-img-top" alt="1984">
     <div class="card-body">
-      <h5 class="card-title">REPLACETHISTEXT</h5>
-      <p class="card-text">REPLACETHISTEXT</p>
-      <p class="card-text"><small class="text-muted">REPLACETHISTEXT</small></p>
+      <h5 class="card-title">1984</h5>
+      <p class="card-text">George Orwell’s dystopian masterpiece depicting a totalitarian society under constant surveillance, where independent thought is a crime.</p>
+      <p class="card-text"><small class="text-muted">Available</small></p>
     </div>
   </div>
   <div class="card">
-    <img src="img/04.jpg" class="card-img-top" alt="...">
+    <img src="img/04.jpg" class="card-img-top" alt="Harry Potter and the Sorcerer's Stone">
     <div class="card-body">
-      <h5 class="card-title">REPLACETHISTEXT</h5>
-      <p class="card-text">REPLACETHISTEXT</p>
-      <p class="card-text"><small class="text-muted">REPLACETHISTEXT</small></p>
+      <h5 class="card-title">Harry Potter and the Sorcerer's Stone</h5>
+      <p class="card-text">The first adventure in J.K. Rowling’s beloved series, where young Harry discovers he is a wizard and attends Hogwarts School of Witchcraft and Wizardry.</p>
+      <p class="card-text"><small class="text-muted">Available</small></p>
     </div>
   </div>
 </div>
@@ -118,19 +118,19 @@
 
 <!--Footer-->
 <footer class="py-3 my-4">
-  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-<ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link active" href="https://tip.ub.ac.id/laboratorium/lab-komputasi-dan-sistem-agroindustri/">REPLACETHISTEXT</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="https://api.whatsapp.com/send/?phone=%2B6282146145084&text&type=phone_number&app_absent=0">REPLACETHISTEXT</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="hhttps://www.instagram.com/reel/C4xtI1uSRV-/?igsh=ZDk3NGtoeXl4c2ds">REPLACETHISTEXT</a>
-  </li>
-</ul>
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Library Info</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Team</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+  </ul>
+  <p class="text-center text-muted">&copy; LibraryApp</p>
+</footer>
 
+<?php if(isset($_GET['pesan']) && $_GET['pesan'] == 'login_failed'): ?>
+  <div class="alert alert-danger text-center">Login failed: Invalid admin credentials.</div>
+<?php endif; ?>
 
 <script src="js/bootstrap.bundle.min.js"></script>
 
