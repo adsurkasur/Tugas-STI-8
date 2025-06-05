@@ -6,7 +6,7 @@
     $producer = $_POST['producer'];
     $batch_number = $_POST['batch_number'];
     $production_date = $_POST['production_date'];
-    $type = $_POST['type']; 
+    $type = $_POST['type'];
     $stock = $_POST['stock'];
 
     $query = "INSERT INTO cheeses (name, producer, batch_number, production_date, type, stock) VALUES ('$name', '$producer', '$batch_number', '$production_date', '$type', '$stock')";

@@ -27,12 +27,12 @@ if (!isset($_SESSION['username'])) {
         if (isset($_POST['submit'])) {
             // Ambil data dari form
             $id = $_POST['id']; 
-            $name = $_POST['nama'];
-            $producer = $_POST['nim'];
-            $batch_number = $_POST['tanggal_lahir'];
-            $production_date = $_POST['alamat'];
-            $type = $_POST['email'];
-            $stock = $_POST['no_telepon'];
+            $name = $_POST['name'];
+            $producer = $_POST['producer'];
+            $batch_number = $_POST['batch_number'];
+            $production_date = $_POST['production_date'];
+            $type = $_POST['type'];
+            $stock = $_POST['stock'];
 
             //Query untuk update data 
             $query = "UPDATE cheeses SET name = '$name', producer = '$producer', batch_number = '$batch_number', production_date = '$production_date', type = '$type', stock = '$stock' WHERE id = '$id'";
@@ -94,26 +94,27 @@ if (!isset($_SESSION['username'])) {
                     <input type="hidden" name="id" value="<?= $data['id'] ?>">
                     <div class="mb-3">
                         <label>Name:</label>
-                        <input type="text" name="nama" class="form-control" value="<?= $data['name'] ?>">
+                        <input type="text" name="name" class="form-control" value="<?= $data['name'] ?>">
                     </div>
                     <div class="mb-3">
                         <label>Producer:</label>
-                        <input type="text" name="nim" class="form-control" value="<?= $data['producer'] ?>">
+                        <input type="text" name="producer" class="form-control" value="<?= $data['producer'] ?>">
                     </div>
                     <div class="mb-3">
                         <label>Batch Number:</label>
-                        <input type="text" name="tanggal_lahir" class="form-control" value="<?= $data['batch_number'] ?>">
+                        <input type="text" name="batch_number" class="form-control" value="<?= $data['batch_number'] ?>">
                     </div>
                     <div class="mb-3">
                         <label>Production Date:</label>
-                        <input type="text" name="alamat" class="form-control" value="<?= $data['production_date'] ?>">
+                        <input type="text" name="production_date" class="form-control" value="<?= $data['production_date'] ?>">
                     </div>
                     <div class="mb-3">
                         <label>Type:</label>
-                        <input type="text" name="email" class="form-control" value="<?= $data['type'] ?>">
+                        <input type="text" name="type" class="form-control" value="<?= $data['type'] ?>">
+                    </div>
                     <div class="mb-3">
                         <label>Stock:</label>
-                        <input type="text" name="no_telepon" class="form-control" value="<?= $data['stock'] ?>">
+                        <input type="text" name="stock" class="form-control" value="<?= $data['stock'] ?>">
                     </div>
                     <button type="submit" name="submit" class="btn btn-primary" value="submit">Save</button>
                 </form>

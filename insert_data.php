@@ -64,27 +64,27 @@ if (!isset($_SESSION['username'])) {
                 <form action="cek_insert.php" method="POST">
                     <div class="mb-3">
                         <label>Name</label>
-                        <input type="text" name="nama" class="form-control">
+                        <input type="text" name="name" class="form-control">
                     </div>
                     <div class="mb-3">
                         <label>Producer</label>
-                        <input type="text" name="nim" class="form-control">
+                        <input type="text" name="producer" class="form-control">
                     </div>
                     <div class="mb-3">
                         <label>Batch Number</label>
-                        <input type="text" name="tanggal_lahir" class="form-control">
+                        <input type="text" name="batch_number" class="form-control">
                     </div>
                     <div class="mb-3">
                         <label>Production Date</label>
-                        <input type="text" name="alamat" class="form-control">
+                        <input type="text" name="production_date" class="form-control">
                     </div>
                     <div class="mb-3">
                         <label>Type</label>
-                        <input type="text" name="email" class="form-control">
+                        <input type="text" name="type" class="form-control">
                     </div>
                     <div class="mb-3">
                         <label>Stock</label>
-                        <input type="text" name="no_telepon" class="form-control">
+                        <input type="text" name="stock" class="form-control">
                     </div>
                     <div class="mb-3">
                         <button type="submit" name="simpan_data" class="btn btn-primary">Save</button>
