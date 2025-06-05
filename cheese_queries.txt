@@ -1,0 +1,51 @@
+-- CheeseApp SQL Queries --
+
+-- 1. Create the database
+CREATE DATABASE cheese_db;
+
+-- 2. Use the database
+USE cheese_db;
+
+-- 3. Create the admin table
+CREATE TABLE admin (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+
+-- 4. Insert an admin user (replace 'admin' and 'admin' as needed)
+INSERT INTO admin (username, password) VALUES ('admin', 'admin');
+
+-- 5. Create the cheeses table
+CREATE TABLE cheeses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    producer VARCHAR(100) NOT NULL,
+    batch_number VARCHAR(50) NOT NULL,
+    production_date DATE NOT NULL,
+    type VARCHAR(50) NOT NULL,
+    stock INT NOT NULL
+);
+
+-- 6. Get all cheeses
+SELECT * FROM cheeses;
+
+-- 7. Get cheese by ID
+SELECT * FROM cheeses WHERE id = ?;
+
+-- 8. Insert new cheese
+INSERT INTO cheeses (name, producer, batch_number, production_date, type, stock)
+VALUES (?, ?, ?, ?, ?, ?);
+
+-- 9. Update cheese by ID
+UPDATE cheeses SET
+    name = ?,
+    producer = ?,
+    batch_number = ?,
+    production_date = ?,
+    type = ?,
+    stock = ?
+WHERE id = ?;
+
+-- 10. Delete cheese by ID
+DELETE FROM cheeses WHERE id = ?;
