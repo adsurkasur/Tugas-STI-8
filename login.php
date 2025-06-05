@@ -7,10 +7,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Library Central Admin Login</title>
+    <title>Cheese Central Admin Login</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <title>Library Central Admin Login</title>
   </head>
   <body>
 
@@ -36,7 +35,7 @@
             </label>
           </div>
           <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
-          <p class="mt-5 mb-3 text-muted">&copy; LibraryApp</p>
+          <p class="mt-5 mb-3 text-muted">&copy; CheeseApp - Ade Surya Ananda - 235100300111009</p>
         </form>
       <a href="index.php">Home</a>
     </main>

@@ -19,7 +19,7 @@ if (!isset($_SESSION['username'])) {
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     
-    <title>wiwiwi</title>
+    <title>Edit Cheese</title>
 </head>
 
 <body>
@@ -27,15 +27,15 @@ if (!isset($_SESSION['username'])) {
         if (isset($_POST['submit'])) {
             // Ambil data dari form
             $id = $_POST['id']; 
-            $title = $_POST['nama'];
-            $author = $_POST['nim'];
-            $isbn = $_POST['tanggal_lahir'];
-            $published_date = $_POST['alamat'];
-            $genre = $_POST['email'];
-            $availability = $_POST['no_telepon'];
+            $name = $_POST['nama'];
+            $producer = $_POST['nim'];
+            $batch_number = $_POST['tanggal_lahir'];
+            $production_date = $_POST['alamat'];
+            $type = $_POST['email'];
+            $stock = $_POST['no_telepon'];
 
             //Query untuk update data 
-            $query = "UPDATE books SET title = '$title', author = '$author', isbn = '$isbn', published_date = '$published_date', genre = '$genre', availability = '$availability' WHERE id = '$id'";
+            $query = "UPDATE cheeses SET name = '$name', producer = '$producer', batch_number = '$batch_number', production_date = '$production_date', type = '$type', stock = '$stock' WHERE id = '$id'";
             $hasil = mysqli_query($conn, $query);
 
             //Jika query berhasil dijalankan, maka akan dilakukan redirect kembali ke halaman detail 
@@ -43,24 +43,24 @@ if (!isset($_SESSION['username'])) {
                 header('Location: view_admin.php');
                 exit();
             } else {
-                echo "Failed to update book: ". mysqli_error($conn);
+                echo "Failed to update cheese: ". mysqli_error($conn);
             }
         } else {
         // Ambil data dari database berdasarkan id 
         $id = $_GET['id'];
-        $query = "SELECT * FROM books WHERE id = '$id'";
+        $query = "SELECT * FROM cheeses WHERE id = '$id'";
         $hasil = mysqli_query($conn, $query);
     }
         
         if (!$hasil) {
-            echo "Failed to retrieve book data: " . mysqli_error($conn);
+            echo "Failed to retrieve cheese data: " . mysqli_error($conn);
             exit();
             }
         $data = mysqli_fetch_assoc($hasil);
     ?>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Library Central</a>
+            <a class="navbar-brand" href="#">Cheese Central</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -71,7 +71,7 @@ if (!isset($_SESSION['username'])) {
                         <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="view_admin.php">Book Data</a>
+                        <a class="nav-link disabled" href="view_admin.php">Cheese Data</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="logout.php">Logout</a>
@@ -86,34 +86,34 @@ if (!isset($_SESSION['username'])) {
     </nav>
     <div class="container mt-4">
         <div class="card">
-            <h5 class="card-header">Edit Book
+            <h5 class="card-header">Edit Cheese
                 <a href="view_admin.php" class="btn btn-danger float-end">Cancel</a>
             </h5>
             <div class="card-body">
                 <form method="post">
                     <input type="hidden" name="id" value="<?= $data['id'] ?>">
                     <div class="mb-3">
-                        <label>Title:</label>
-                        <input type="text" name="nama" class="form-control" value="<?= $data['title'] ?>">
+                        <label>Name:</label>
+                        <input type="text" name="nama" class="form-control" value="<?= $data['name'] ?>">
                     </div>
                     <div class="mb-3">
-                        <label>Author:</label>
-                        <input type="text" name="nim" class="form-control" value="<?= $data['author'] ?>">
+                        <label>Producer:</label>
+                        <input type="text" name="nim" class="form-control" value="<?= $data['producer'] ?>">
                     </div>
                     <div class="mb-3">
-                        <label>ISBN:</label>
-                        <input type="text" name="tanggal_lahir" class="form-control" value="<?= $data['isbn'] ?>">
+                        <label>Batch Number:</label>
+                        <input type="text" name="tanggal_lahir" class="form-control" value="<?= $data['batch_number'] ?>">
                     </div>
                     <div class="mb-3">
-                        <label>Published Date:</label>
-                        <input type="text" name="alamat" class="form-control" value="<?= $data['published_date'] ?>">
+                        <label>Production Date:</label>
+                        <input type="text" name="alamat" class="form-control" value="<?= $data['production_date'] ?>">
                     </div>
                     <div class="mb-3">
-                        <label>Genre:</label>
-                        <input type="text" name="email" class="form-control" value="<?= $data['genre'] ?>">
+                        <label>Type:</label>
+                        <input type="text" name="email" class="form-control" value="<?= $data['type'] ?>">
                     <div class="mb-3">
-                        <label>Availability:</label>
-                        <input type="text" name="no_telepon" class="form-control" value="<?= $data['availability'] ?>">
+                        <label>Stock:</label>
+                        <input type="text" name="no_telepon" class="form-control" value="<?= $data['stock'] ?>">
                     </div>
                     <button type="submit" name="submit" class="btn btn-primary" value="submit">Save</button>
                 </form>

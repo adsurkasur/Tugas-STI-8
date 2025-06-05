@@ -3,7 +3,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $database = "library_db";
+    $database = "cheese_db";
 
     // Membuat koneksi ke database
     $conn = mysqli_connect($servername, $username, $password, $database);

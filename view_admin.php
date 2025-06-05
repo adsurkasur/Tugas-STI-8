@@ -19,14 +19,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-    <title>Data</title>
+    <title>Cheese Data</title>
 </head>
 
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Library Central</a>
+      <a class="navbar-brand" href="#">Cheese Central</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,7 +36,7 @@
             <a class="nav-link active" aria-current="page" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="view_admin.php">Book Data</a>
+            <a class="nav-link disabled" href="view_admin.php">Cheese Data</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="logout.php">Logout</a>
@@ -56,8 +56,8 @@
       <div class="col-md-12">
         <div class="card">
           <div class="card-header">
-            <h4>Book Data
-              <a href="insert_data.php" class="btn btn-success float-end">Add Book</a>
+            <h4>Cheese Data
+              <a href="insert_data.php" class="btn btn-success float-end">Add Cheese</a>
             </h4>
           </div>
           <div class="card-body">
@@ -65,18 +65,18 @@
               <thead class="text-left">
                   <tr>
                   <th>ID</th>
-                  <th>Title</th>
-                  <th>Author</th>
-                  <th>ISBN</th>
-                  <th>Published Date</th>
-                  <th>Genre</th>
-                  <th>Availability</th>
+                  <th>Name</th>
+                  <th>Producer</th>
+                  <th>Batch Number</th>
+                  <th>Production Date</th>
+                  <th>Type</th>
+                  <th>Stock</th>
                   </tr>
               </thead>
               <tbody>
                 <?php
                   // Query untuk memanggil data
-                  $sql = "SELECT * FROM books";
+                  $sql = "SELECT * FROM cheeses";
                   $result = $conn->query($sql);
 
                   // Tampilkan data ke dalam tabel
@@ -84,19 +84,19 @@
                     while($row = $result->fetch_assoc()) {
                       echo "<tr>";
                       echo "<td>" . $row["id"] . "</td>";
-                      echo "<td>" . $row["title"] . "</td>";
-                      echo "<td>" . $row["author"] . "</td>";
-                      echo "<td>" . $row["isbn"] . "</td>";
-                      echo "<td>" . $row["published_date"] . "</td>";
-                      echo "<td>" . $row["genre"] . "</td>";
-                      echo "<td>" . $row["availability"] . "</td>";
+                      echo "<td>" . $row["name"] . "</td>";
+                      echo "<td>" . $row["producer"] . "</td>";
+                      echo "<td>" . $row["batch_number"] . "</td>";
+                      echo "<td>" . $row["production_date"] . "</td>";
+                      echo "<td>" . $row["type"] . "</td>";
+                      echo "<td>" . $row["stock"] . "</td>";
                       
                       echo "<td> <a href=update_data.php?id=".$row["id"]." class='btn btn-warning btn-sm'>Edit</a>
                       <a href=delete_data.php?id=".$row["id"]." class='btn btn-danger btn-sm'>Remove</a>";
                       echo "</tr>";         
                     }
                   } else {
-                      echo "<tr><td colspan='8'>No books found.</td></tr>";
+                      echo "<tr><td colspan='8'>No cheeses found.</td></tr>";
                   }
                   // Tutup koneksi ke database
                   $conn->close();
@@ -115,12 +115,12 @@
     <footer class="py-3 my-4">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Library Info</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Cheese Info</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Team</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
       </ul>
-      <p class="text-center text-muted">&copy; LibraryApp</p>
+      <p class="text-center text-muted">&copy; CheeseApp - Ade Surya Ananda - 235100300111009</p>
     </footer>
   </div>
 
