@@ -7,6 +7,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
+<?php if(isset($_GET['pesan']) && $_GET['pesan'] == 'login_failed'): ?>
+  <div class="alert alert-danger text-center">Login failed: Invalid admin credentials.</div>
+<?php endif; ?>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light">
     </nav>
@@ -127,10 +130,6 @@
   </ul>
   <p class="text-center text-muted">&copy; CheeseApp - Ade Surya Ananda - 235100300111009</p>
 </footer>
-
-<?php if(isset($_GET['pesan']) && $_GET['pesan'] == 'login_failed'): ?>
-  <div class="alert alert-danger text-center">Login failed: Invalid admin credentials.</div>
-<?php endif; ?>
 
 <script src="js/bootstrap.bundle.min.js"></script>
 

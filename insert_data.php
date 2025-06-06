@@ -22,6 +22,10 @@ if (!isset($_SESSION['username'])) {
 </head>
 
 <body>
+<?php if(isset($_SESSION['message'])): ?>
+  <div class="alert alert-info text-center"><?php echo $_SESSION['message']; unset($_SESSION['message']); ?></div>
+<?php endif; ?>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">

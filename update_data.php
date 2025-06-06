@@ -23,29 +23,34 @@ if (!isset($_SESSION['username'])) {
 </head>
 
 <body>
-    <?php
-        if (isset($_POST['submit'])) {
-            // Ambil data dari form
-            $id = $_POST['id']; 
-            $name = $_POST['name'];
-            $producer = $_POST['producer'];
-            $batch_number = $_POST['batch_number'];
-            $production_date = $_POST['production_date'];
-            $type = $_POST['type'];
-            $stock = $_POST['stock'];
+<?php if(isset($_SESSION['message'])): ?>
+  <div class="alert alert-info text-center"><?php echo $_SESSION['message']; unset($_SESSION['message']); ?></div>
+<?php endif; ?>
+<?php
+    if (isset($_POST['submit'])) {
+        // Ambil data dari form
+        $id = $_POST['id']; 
+        $name = $_POST['name'];
+        $producer = $_POST['producer'];
+        $batch_number = $_POST['batch_number'];
+        $production_date = $_POST['production_date'];
+        $type = $_POST['type'];
+        $stock = $_POST['stock'];
 
-            //Query untuk update data 
-            $query = "UPDATE cheeses SET name = '$name', producer = '$producer', batch_number = '$batch_number', production_date = '$production_date', type = '$type', stock = '$stock' WHERE id = '$id'";
-            $hasil = mysqli_query($conn, $query);
+        //Query untuk update data 
+        $query = "UPDATE cheeses SET name = '$name', producer = '$producer', batch_number = '$batch_number', production_date = '$production_date', type = '$type', stock = '$stock' WHERE id = '$id'";
+        $hasil = mysqli_query($conn, $query);
 
-            //Jika query berhasil dijalankan, maka akan dilakukan redirect kembali ke halaman detail 
-            if ($hasil) {
-                header('Location: view_admin.php');
-                exit();
-            } else {
-                echo "Failed to update cheese: ". mysqli_error($conn);
-            }
+        if ($hasil) {
+            $_SESSION['message'] = "Cheese updated successfully";
+            header('Location: view_admin.php');
+            exit();
         } else {
+            $_SESSION['message'] = "Failed to update cheese: ". mysqli_error($conn);
+            header('Location: view_admin.php');
+            exit();
+        }
+    } else {
         // Ambil data dari database berdasarkan id 
         $id = $_GET['id'];
         $query = "SELECT * FROM cheeses WHERE id = '$id'";
